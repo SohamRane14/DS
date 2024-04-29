@@ -1,0 +1,24 @@
+Terminal 1
+# compile all java files
+javac *.java
+
+# compile implementation file
+rmic ServerImplementation
+
+# start rmiregistry
+rmiregistry
+
+Terminal 2
+# start the server
+java Server
+
+Terminal 3
+# connect the client
+# for addtion, substraction, division, multiplication
+java Client 10 20
+# for square, square root
+java Client 25
+# for string equal
+java Client abc abc
+# for palindrome
+java Client aba
